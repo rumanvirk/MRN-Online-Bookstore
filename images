@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRN Bookstore | Online Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">MRN<span> Bookstore</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <button onclick="showCart()">🛒 Cart <span id="cart-count">0</span></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO MRN BOOKSTORE</p>
+
+            <h1>Discover Your Next Favourite Book</h1>
+
+            <p>
+                Explore a world of knowledge, imagination and inspiration.
+                Find your favourite books at amazing prices.
+            </p>
+
+            <a href="#books" class="shop-btn">Explore Books</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800"
+                 alt="Beautiful Book Collection">
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+
+        <h2>Explore Categories</h2>
+        <p>Find books according to your interests</p>
+
+        <div class="category-list">
+            <div class="category-card">📖 Fiction</div>
+            <div class="category-card">💻 Computer</div>
+            <div class="category-card">📚 Novels</div>
+            <div class="category-card">🔬 Science</div>
+            <div class="category-card">🌍 History</div>
+            <div class="category-card">🎓 Education</div>
+        </div>
+
+    </section>
+
+    <!-- Featured Books -->
+    <section class="books-section" id="books">
+
+        <h2>Our Featured Books</h2>
+        <p>Explore our collection of popular books</p>
+
+        <div class="book-container" id="book-container">
+            <!-- Books will be added through JavaScript -->
+        </div>
+
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="cart-section" id="cart-section">
+
+        <h2>Shopping Cart</h2>
+
+        <div id="cart-items">
+            Your cart is empty.
+        </div>
+
+        <h3>Total: Rs. <span id="cart-total">0</span></h3>
+
+        <button class="order-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+
+        <h2>MRN Bookstore</h2>
+
+        <p>Your favourite books, just one click away.</p>
+
+        <p>Online Book Shopping Store</p>
+
+        <p>© 2026 MRN Bookstore. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
